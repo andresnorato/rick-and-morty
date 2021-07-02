@@ -1,0 +1,53 @@
+.Characters {
+  width: 90%;
+  margin: 15px auto;
+}
+
+.character {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: start;
+  box-shadow: 1px 3px 2px 2px rgb(41 41 41 / 10%);
+  overflow: hidden;
+  margin:  20px auto;
+}
+
+.character img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.character--info {
+  margin-left: 15px;
+  padding-bottom: 4px;
+}
+
+.alive {
+  color: rgb(32, 207, 32);
+}
+
+.death {
+  color: red;
+  width: 50%;
+  border-bottom: 2px solid red;
+}
+
+@media (min-width: 1020px) {
+  .Characters {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin: 15px auto;
+  }
+  .character img {
+    width: auto;
+    background-position: center;
+  }
+  .character {
+    border-radius: 10px;
+    width: 85%;
+    height: 220px;
+    display: flex;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+}
